@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		<meta name="description" content="this is a good Website">
+	</head>
+		<title>
+			Reise nach Pakistan
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="java.js" defer></script>
+	</head>
+	<body>
+		
+		<nav class="nav_bar"><!--für die größenveränderbare dynamische Menüleiste-->
+			<div class="nav_logo"><img src="paklogo.jpg" alt="pak Logo">Pakistan Kennenlernen</div><!--das Logo mit Text und Bild auf der linken Seite-->
+			<a href="#" class="toggle-button"><!--die Button, die erscheint, wenn die Breite klein ist-->
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<div class="list-container">
+				<ul><!--rechte Seite des Menüs mit klickbaren Links-->
+					<li><a href="home.html">Home</a></li>
+					<li><a href="culture.html">Kultur</a></li>
+					<li><a href="history.html">Geschichte</a></li>
+					<li><a href="geography.html">Geografie</a></li>						
+					<li><a href="Quiz.html">Quiz Spielen</a></li>
+					<li><a href="Blog.php">Blog</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		
+		<!--drei verschiedene Bereiche auf der Startseite mit jeweils einer anklickbaren Buttons-->
+		<div class="culture" ><a href="culture.html"><button class="btn1">Kultur</button></a></div>
+		<div class="history" ><a href="history.html"><button class="btn2">Geschichte</button></a></div>
+		<div class="geography" ><a href="geography.html"><button class="btn3">Geografie</button></a></div>
+
+		<main class = "grid-container"><!--der letzte Teil der Startseite hat Inhalte, die in zwei Spalten unterteilt sind-->
+			<article><!--der Titel und das Bild enthalten beide einen Link-->
+				<a href="Quiz.html"><img  src="quiz4.jpg"></a>
+				<div>
+					<a href="Quiz.html"><h2 id="text">Quiz</h2></a>
+					<p id="text">Nimm an einem kleinen Quiz teil und finde heraus, wie viel du über Pakistan weißt.</p>
+				</div>
+			</article>
+			<article><!--der Titel und das Bild enthalten beide einen Link-->
+				<a href="Blog.html"><img  src="tourism.jpg"></a>
+				<div>
+					<a href="Blog.html"><h2 id="text">Blog</h2></a>
+					<p id="text">Haben Sie Pakistan bereits besucht? Teilen Sie Ihre Erfahrungen!</p>
+				</div>
+			</article>
+
+
+
+		</main>
+
+
+
+
+
+
+		<!--<div class="foot">
+
+			<div class="content">
+				<div href="#" class="c1">Quiz</div>
+				<div href="#" class="c2">Blog</div>
+			</div> 
+
+		</div>-->
+	
+	</body>
+</html>

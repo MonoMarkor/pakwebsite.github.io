@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		<meta name="description" content="Quiz">
+	</head>
+		<title>
+			Quiz
+		</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="java.js" defer></script>
+	</head>
+	<body>
+        <nav class="nav_bar"><!--gleiche Navigationsmenüleiste-->
+			<div class="nav_logo"><img src="paklogo.jpg" alt="pak Logo">Pakistan Kennenlernen</div>
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<div class="list-container">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="culture.html">Kultur</a></li>
+					<li><a href="history.html">Geschichte</a></li>
+					<li><a href="geography.html">Geografie</a></li>						
+					<li><a href="Quiz.html">Quiz Spielen</a></li>
+					<li><a href="Blog.html">Blog</a></li>
+				</ul>
+			</div>
+		</nav>
+		<main class="artikle"><!--Beginn des Quiz-->
+			<h3>Q1. Was ist die Hauptstadt Pakistans?</h3>
+			<input type="radio" name="question1" id="correct1">   Islamabad<br><!--die richtige Antwort hat die id: "correct#"-->
+			<input type="radio" name="question1">   Karachi<br>
+			<input type="radio" name="question1">   Lahore<br>
+			<input type="radio" name="question1">   Peshawar<br><div id="answer1"></div><br><!--hier erscheint die Meldung richtig oder falsch-->
+			
+
+			<h3>Q2. In welchem Jahr wurde Pakistan von den Briten unabhängig?</h3>
+			<input type="radio" name="question2">   1857<br>
+			<input type="radio" name="question2" id="correct2">   1947<br>
+			<input type="radio" name="question2">   1971<br>
+			<input type="radio" name="question2">   2012<br><div id="answer2"></div><br>
+
+			<h3>Q3. Welches ist der größte Fluss Pakistans?</h3>
+			<input type="radio" name="question3">   Ravi<br>
+			<input type="radio" name="question3">   Jhelum<br>
+			<input type="radio" name="question3" id="correct3">   Indus<br>
+			<input type="radio" name="question3">   Sutlej<br><div id="answer3"></div><br>
+
+			<h3>Q4. Was ist die Hauptsprache in Pakistan?</h3>
+			<input type="radio" name="question4">   Pashto<br>
+			<input type="radio" name="question4">   Punjabi<br>
+			<input type="radio" name="question4">   Englisch<br>
+			<input type="radio" name="question4" id="correct4">   Urdu<br><div id="answer4"></div><br>
+
+			<h3>Q5. Welcher Berg ist mit 8611 Metern der größte des Landes?</h3>
+			<input type="radio" name="question5" id="correct5">   K2<br>
+			<input type="radio" name="question5">   Nanga Parbat<br>
+			<input type="radio" name="question5">   Masherbrum<br>
+			<input type="radio" name="question5">   Gasherbrum II<br><div id="answer5"></div><br>
+
+			<h3>Q6. Welches ist das beliebteste Spiel der Pakistaner?</h3>
+			<input type="radio" name="question6">   Hockey<br>
+			<input type="radio" name="question6" id="correct6">   Kricket<br>
+			<input type="radio" name="question6">   Fußball<br>
+			<input type="radio" name="question6">   Tennis<br><div id="answer6"></div><br>
+
+			<h3>Q7. Welches ist das Nationaltier von Pakistan?</h3>
+			<input type="radio" name="question7" id="correct7">   Markhor<br>
+			<input type="radio" name="question7">   Bär<br>
+			<input type="radio" name="question7">   Löwe<br>
+			<input type="radio" name="question7">   Tiger<br><div id="answer7"></div><br>
+
+			<h3>Q8. Welche ist die Nationalblume Pakistans?</h3>
+			<input type="radio" name="question8">   Rose<br>
+			<input type="radio" name="question8">   Thistle<br>
+			<input type="radio" name="question8" id="correct8">   Jasmin<br>
+			<input type="radio" name="question8">   Kamille<br><div id="answer8"></div><br>
+
+			<h3>Q9. Welches Land erlangte im Jahr 1971 die Unabhängigkeit von Pakistan?</h3>
+			<input type="radio" name="question9">   Afghanistan<br>
+			<input type="radio" name="question9" id="correct9">   Bangladesch<br>
+			<input type="radio" name="question9">   Indien<br>
+			<input type="radio" name="question9">   Sirilanka<br><div id="answer9"></div><br>
+
+			<h3>Q10. Welche Religion wird im Land am meisten praktiziert?</h3>
+			<input type="radio" name="question10">   Hinduismus<br>
+			<input type="radio" name="question10">   Christentum<br>
+			<input type="radio" name="question10" id="correct10">   Islam<br>
+			<input type="radio" name="question10">   Schikhismus<br><div id="answer10"></div><br>
+
+			<button class="btnQuiz" onclick="result()">Go!</button><!--Durch Anklicken der Taste wird die Funktion des Quizspiels aufgerufen-->
+			<br>
+			<div id="QuizMessage"></div><!--hier wird die Anzahl der erreichten Punkte angezeigt-->
+			
+		</main>
+    </body>
+</html>

@@ -1,0 +1,245 @@
+
+/*Google-Schriftart Poppins importieren*/@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{/*Matgin- und Paddingeinstellungen für das Navigationsmenü*/
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    background-color: rgb(42,42,42);
+}
+nav{/*Styling für die Menüleiste*/
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F6F6F6;
+    color: black;
+    border-bottom: 4px solid rgb(42,42,42);
+}
+.nav_logo{/*Styling für den Logo-Text auf der linken Seite*/
+    margin: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-style: italic;
+}
+nav div img{/*Styling für den Logo-Bild auf der rechten Seite*/
+    height: 30px;
+}
+nav ul{
+    display: flex;
+}
+nav div ul li{/*für die einzelnen Menülinks*/
+    height: 100%;
+    padding: 30px;
+    list-style-type: none;
+}
+nav ul li a{/*Styling für die einzelnen Menülinks*/
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+nav div ul li a:hover{/*für die einzelnen Menülinks beim Hovern */
+    color: green;
+    border-bottom: 4px solid green;
+}
+
+
+/*für die Schaltfläche, die bei der Größenänderung des Fensters erscheint*/
+.toggle-button{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 23px;
+}
+.toggle-button .bar{
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 100px;
+}
+@media(max-width:1350px){/*Breite des Fensters, wenn die Button die Menüpunkte auf der rechten Seite ersetzt*/
+    .list-container{
+        display: none;
+        width: 100%;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .list-container ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .list-container li{
+        text-align: center;
+    }
+
+    .list-container.active{
+        display: flex;
+    }
+}
+
+
+.culture{/*Styling für das Kulturpanel auf der Startseite*/
+    background-image: url('culture4.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15%;
+    text-align: center;
+    border-bottom: 4px solid rgb(42,42,42);
+}
+.history{/*Styling für das Geschichtepanel auf der Startseite*/
+    background-image: url('history2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15%;
+    text-align: center;
+    border-bottom: 4px solid rgb(42,42,42);
+}
+.geography{/*Styling für das Geografiepanel auf der Startseite*/
+    background-image: url('geography2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 15%;
+    text-align: center;
+    border-bottom: 4px solid rgb(42,42,42);
+}
+.btn1{/*Styling für die kultur-Taste auf der Startseite*/
+    width: 300px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: rgb(82, 9, 72, 0.5);
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 85px;
+    outline: none;
+}
+.btn1:hover{/*Styling für die kultur-Taste beim Hovern auf der Startseite*/
+    cursor: pointer;
+    color: rgb(82, 9, 72);
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.btn2{/*Styling für die Geschichte-Taste auf der Startseite*/
+    width: 480px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: rgba(8, 7, 8, 0.644);
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 85px;
+    outline: none;
+}
+.btn2:hover{/*Styling für die Geschichte-Taste beim Hovern auf der Startseite*/
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.btn3{/*Styling für die Geografie-Taste auf der Startseite*/
+    width: 520px;
+    height: 100px;
+    border: none;
+    color: white;
+    background-color: rgba(1, 131, 44, 0.5);
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 85px;
+    outline: none;
+}
+.btn3:hover{/*Styling für die Geografie-Taste beim Hovern auf der Startseite*/
+    cursor: pointer;
+    color: rgb(0, 112, 43);
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.btnQuiz{/*Styling für die Go!-Taste auf der Quiz page*/
+    width: 200px;
+    height: 75px;
+    border: none;
+    color: white;
+    background-color: rgb(33, 189, 54);
+    border-radius: 4px;
+    transition: ease-out 0.3s;
+    font-size: 50px;
+    outline: none;
+}
+.btnQuiz:hover{/*Styling für die Go!-Taste beim Hovern auf der Quiz page*/
+    cursor: pointer;
+    color: rgb(33, 189, 54);
+    background-color: #F6F6F6;
+}
+main{/*Standard-Hintergrundfarbe auf der Homepage dasselbe wie der Body-Tag*/
+    background-color: rgb(42,42,42);
+}
+.grid-container{/*den letzten Teil der Startseite in zwei Spalten zu unterteilen*/
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 50px;
+    align-items: center;
+}
+article a img{/*Styling für die letzten beiden Bilder auf der Startseite*/
+   width: 80%; 
+   border: #F6F6F6 solid;
+   border-radius: 5px;
+   align-content: center;
+}
+#text{/*Styling für den Text im letzten Teil der Startseite*/
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;   
+}
+
+
+/*Beseitigung von Effekten beim Besuch, Verweilen oder Anklicken eines Links*/
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+/**/
+.artikle{/*Styling für das main-Tag auf allen Seiten außer der Startseite*/
+    margin: 10px 50px 50px 50px ;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+}
+
+/*Styling für die Meldungen, die im Quizspiel auftauchen*/
+#true{
+    color: green;
+}
+#false{
+    color: red;
+}
+#points{
+    color: gold;
+}
+
+.pics{/*Größeneinstellungen für die Bilder auf den Seiten Kultur, Geschichte und Geofraphie*/
+    max-width: 100%;
+    max-height: 300px;
+}

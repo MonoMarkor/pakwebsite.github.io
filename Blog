@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">	
+		<meta name="description" content="this is a good Website">
+	</head>
+		<title>
+			Kultur
+		</title>
+		<link rel="stylesheet" type="text/css" href="home.css">
+		<script type="text/javascript" src="menu.js" defer></script>
+	</head>
+	<body>
+        <nav class="nav_bar">
+			<div class="nav_logo"><img src="paklogo.jpg" alt="Italian Trulli">Pakistan Kennenlernen</div>
+			<a href="#" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+			<div class="list-container">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Kultur</a></li>
+					<li><a href="#">Geschichte</a></li>
+					<li><a href="#">Geographie</a></li>						
+					<li><a href="#">Quiz Spielen</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</div>
+		</nav>
+    </body>
+</html>
